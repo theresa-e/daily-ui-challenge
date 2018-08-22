@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul > * {
+  padding: 0 5px;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.section-1 {
+  min-height: 100vh;
+  background-color: #80abbc;
+}
+
+.section-2 {
+  min-height: 100vh;
+  background-color: #8b70b6;
+}
+
+.section-3 {
+  min-height: 100vh;
+  background-color: #71a771;
+}
+
+/*# sourceMappingURL=styles.css.map */
