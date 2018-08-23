@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Lato";
 }
 
 .navbar {
   display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
 }
 .navbar ul {
   display: flex;
@@ -17,18 +21,57 @@ body {
 }
 
 .section-1 {
-  min-height: 100vh;
+  height: 100vh;
+  background-image: url("../imgs/milktea.jpg");
+  background-size: cover;
   background-color: #80abbc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom: 10px solid gray;
+  padding: 10px;
+}
+.section-1 h1 {
+  color: #fff;
+  font-size: 3.5em;
+  padding: none;
 }
 
 .section-2 {
   min-height: 100vh;
-  background-color: #8b70b6;
+  background-color: #fff;
 }
 
 .section-3 {
   min-height: 100vh;
   background-color: #71a771;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 1em;
+  border: none;
+}
+.button:hover {
+  animation-name: button-hov;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes button-hov {
+  100% {
+    background-color: #b76464;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
