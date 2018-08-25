@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.wrapper {
+  margin: 0 auto;
+  padding: 2% 10%;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.main-title {
+  letter-spacing: 0.1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 40%;
+  padding: 3% 0;
+}
+.box__img {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.box figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.box figure:hover img {
+  opacity: 0.75;
+}
+.box figure a {
+  top: 50%;
+  left: 50%;
+}
+.box__title {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.box__text--subtitle {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=styles.css.map */
