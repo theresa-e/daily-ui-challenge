@@ -6,46 +6,59 @@ body {
 }
 
 .navbar {
+  position: absolute;
   display: flex;
   justify-content: flex-end;
-  background-color: #fff;
+  background-color: rgba(210, 132, 127, 0.49);
+  height: auto;
+}
+.navbar h1 {
+  color: #fff;
+  font-size: 3em;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
 }
 .navbar ul {
   display: flex;
   justify-content: space-between;
+  color: #fff;
 }
 .navbar ul > * {
-  padding: 0 5px;
+  padding: 0 15px;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+.navbar ul > * a {
+  color: #fff;
 }
 
 .section-1 {
   height: 100vh;
   background-image: url("../imgs/milktea.jpg");
   background-size: cover;
-  background-color: #80abbc;
+  background-color: #d3a8a5;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  border-bottom: 10px solid gray;
+  border-bottom: 5px solid #62728f;
   padding: 10px;
-}
-.section-1 h1 {
-  color: #fff;
-  font-size: 3.5em;
-  padding: none;
 }
 
 .section-2 {
-  min-height: 100vh;
+  min-height: 50vh;
   background-color: #fff;
+}
+.section-2 h1 {
+  text-align: center;
 }
 
 .section-3 {
-  min-height: 100vh;
-  background-color: #71a771;
+  min-height: 70vh;
+  background-color: #ab7d79;
 }
 
 a {
@@ -66,11 +79,17 @@ a {
   animation-fill-mode: forwards;
 }
 
+footer {
+  height: 5vh;
+  border: 1px solid green;
+  text-align: center;
+}
+
 @keyframes button-hov {
   100% {
-    background-color: #b76464;
+    background-color: #628557;
     color: #ffffff;
-    transform: scale(1.05);
+    transform: scale(1.01);
   }
 }
 
