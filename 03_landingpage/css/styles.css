@@ -47,13 +47,36 @@ body {
   border-bottom: 5px solid #62728f;
   padding: 10px;
 }
+.section-1__title {
+  color: #fff;
+}
+.section-1__button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 1em;
+  border: none;
+  background-color: #fff;
+}
+.section-1__button:hover {
+  animation-name: button-hov;
+  animation-duration: 600ms;
+  animation-fill-mode: forwards;
+}
 
 .section-2 {
   min-height: 50vh;
   background-color: #fff;
-}
-.section-2 h1 {
+  padding: 10px;
   text-align: center;
+}
+.section-2__title {
+  margin: 0;
+}
+.section-2__subtitle {
+  margin: 0;
+  font-style: italic;
 }
 
 .section-3 {
@@ -63,20 +86,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.button {
-  padding: 10px 15px;
-  border-radius: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 1em;
-  border: none;
-}
-.button:hover {
-  animation-name: button-hov;
-  animation-duration: 600ms;
-  animation-fill-mode: forwards;
 }
 
 footer {

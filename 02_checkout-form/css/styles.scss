@@ -18,7 +18,35 @@ body {
     -webkit-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
     box-shadow: 9px 13px 25px 0px rgba(0, 0, 0, 0.18);
+    animation: slideInLeft 2000ms ease;
 }
+
+@keyframes slideInLeft {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+
+    }
+}
+
+// @keyframes slideInLeft {
+//     0% {
+//         -webkit-transform: translateX(-100%);
+//         transform: translateX(-100%);
+//         visibility: visible;
+//     }
+
+//     100% {
+//         -webkit-transform: translateX(0);
+//         transform: translateX(0);
+//     }
+// }
 
 .container {
     width: 65%;
@@ -155,8 +183,7 @@ button:focus {
 
     .name,
     .address-info,
-    .cc-info
-        {
+    .cc-info {
         flex-direction: column;
         width: 100%;
         justify-content: space-between;
@@ -169,7 +196,8 @@ button:focus {
         }
     }
 
-    .street, .cc-num {
+    .street,
+    .cc-num {
         text-align: center;
     }
 

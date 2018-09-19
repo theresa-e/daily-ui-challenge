@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,6 +12,7 @@ body {
     justify-content: flex-end;
     background-color: hsla(4, 48%, 66%, 0.49);
     height: auto;
+
     h1 {
         color: #fff;
         font-size: 3em;
@@ -20,14 +22,17 @@ body {
         margin: 0;
         text-align: center;
     }
+
     ul {
         display: flex;
         justify-content: space-between;
         color: #fff;
-        > * {
+
+        >* {
             padding: 0 15px;
             list-style: none;
             font-size: 1rem;
+
             a {
                 color: #fff;
             }
@@ -46,13 +51,37 @@ body {
     justify-content: center;
     border-bottom: 5px solid rgb(98, 114, 143);
     padding: 10px;
+
+    &__title {
+        color: #fff;
+    }
+    &__button {
+        padding: 10px 15px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        font-size: 1em;
+        border: none;
+        background-color: #fff;
+        &:hover {
+            animation-name: button-hov;
+            animation-duration: 600ms;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 
 .section-2 {
     min-height: 50vh;
     background-color: #fff;
-    h1 {
-        text-align: center;
+    padding: 10px;
+    text-align: center;
+    &__title {
+        margin: 0;
+    }
+    &__subtitle {
+        margin: 0;
+        font-style: italic;
     }
 }
 
@@ -65,19 +94,7 @@ a {
     text-decoration: none;
 }
 
-.button {
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    font-size: 1em;
-    border: none;
-    &:hover {
-        animation-name: button-hov;
-        animation-duration: 600ms;
-        animation-fill-mode: forwards;
-    }
-}
+
 
 footer {
     height: 5vh;
